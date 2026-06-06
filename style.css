@@ -1,0 +1,122 @@
+*
+{
+    padding: 0;
+    margin: 0;
+   
+}
+body
+{
+    background-color: black;
+}
+.nav
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height:40px;
+    width:1000px;
+    color: white;
+    /* margin-top:100px; */
+    margin-left:120px ;
+    align-items: center;
+    border:solid rgb(245, 243, 243) 2px;
+    border-radius: 10px;
+    padding: 15px;
+    position: fixed;
+    top:0px;
+    background: transparent;
+    /* -webkit-backdrop-filter: blur(0.6); */
+    /* backdrop-filter: blur(0.6); */
+    margin-top:10px;
+    box-shadow: 5px 5px 10px 2px black;
+    
+
+    
+}
+.nav h1{
+    font-size: 20px;
+    color: rgb(252, 252, 252);
+}
+ul{
+    
+    list-style: none;
+}
+li{
+    display: inline;
+    background-color: brown;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    transition:transform 0.5s ease-in-out 1s;
+}
+li:hover{
+    background: linear-gradient(to right,#e70909,#c70ae9);
+    color: black;
+    transform:scale(1.2);
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.con
+{
+    height:400px;
+    width:1000px;
+    background-color: #42064d8a;
+    margin-top:120px;
+    margin-left: 140px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 3px -1px 10px 5px rgba(144, 5, 5, 0.822);
+    border-radius: 20px;
+    color: white;
+    border:solid 2px black;
+}
+.con img{
+    height: 270px;
+    width:220px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 10px black;
+    transition:transform ease-in-out 0.5s;
+    
+    
+}
+.img
+{
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.contact
+{
+    height: 100px;
+    width:1000;
+    background-color: bisque;
+    text-align: center;
+    color: rgb(223, 24, 24);
+    padding: 10px;
+    
+    
+}
+.about
+{
+    height: 100px;
+    width:1000;
+    background-color: bisque;
+    text-align: center;
+    color: rgb(4, 4, 4);
+    padding: 10px;
+    margin:1px;
+}
+img:hover{
+    transform: scale(1.2);
+}
