@@ -19,7 +19,7 @@ body
     /* margin-top:100px; */
     margin-left:120px ;
     align-items: center;
-    border:solid rgb(245, 243, 243) 2px;
+    border:solid rgb(245, 243, 243) 1px;
     border-radius: 10px;
     padding: 15px;
     position: fixed;
@@ -36,25 +36,35 @@ body
 .nav h1{
     font-size: 20px;
     color: rgb(252, 252, 252);
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+}
+.nav h1:hover
+{
+ color:rgb(0, 146, 209);
+ transform: scale(1.1);
 }
 ul{
     
     list-style: none;
 }
 li{
-    display: inline;
-    background-color: brown;
+    display: inline-block;
+    background-color: rgba(165, 42, 42, 0.731);
     padding: 6px;
     border-radius: 10px;
     cursor: pointer;
     font-size: 13px;
     font-weight: bold;
-    transition:transform 0.5s ease-in-out 1s;
+    transition:background-color 0.5s ease-in-out;
+    border:1.3px solid white;
+    margin-right: 10px;
 }
 li:hover{
-    background: linear-gradient(to right,#e70909,#c70ae9);
-    color: black;
-    transform:scale(1.2);
+    /* background: linear-gradient(to right,#e70909,#c70ae9); */
+    background-color: transparent;
+    color: rgb(5, 208, 231);
+    transform:scale(1.1);
 }
 .poppins-regular {
   font-family: "Poppins", sans-serif;
@@ -120,3 +130,40 @@ li:hover{
 img:hover{
     transform: scale(1.2);
 }
+.ani
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+
+}
+.ani span
+{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    border:2px white solid;
+    animation-duration: 20s;
+    animation-name: float;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+ .ani span:nth-child(1){position:absolute;left:20px;top:1000px;animation-duration: 10s;}
+        .ani span:nth-child(2){position:absolute;left:300px;top:1000px;animation-duration: 16s;}
+        .ani span:nth-child(3){position:absolute;left:400px;top:1000px;animation-duration: 18s;}
+        .ani span:nth-child(4){position:absolute;left:500px;top:1000px;animation-duration: 20s;}
+        .ani span:nth-child(5){position:absolute;left:600px;top:1000px;animation-duration: 25s;}
+@keyframes float {
+    0%
+    {
+       transform: translateY(1000px); opacity: 0;
+    }
+    100%
+    {
+       transform: translateY(-1200px); opacity: 1;background: transparent;color: aqua;outline: none;
+    }
+    
+}
+
